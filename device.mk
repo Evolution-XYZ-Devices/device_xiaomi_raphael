@@ -76,7 +76,8 @@ PRODUCT_PACKAGES += \
     libqcompostprocbundle
 
 PRODUCT_PACKAGES += \
-    libaudio-resampler
+    libaudio-resampler \
+    tinymix
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
