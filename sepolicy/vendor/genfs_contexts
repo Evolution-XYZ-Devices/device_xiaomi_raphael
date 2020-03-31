@@ -33,3 +33,6 @@ genfscon sysfs /devices/virtual/misc/msm_wmapro/wakeup                  u:object
 
 # FPS Info
 genfscon sysfs /class/drm/card0/sde-crtc-0/measured_fps    u:object_r:vendor_sysfs_graphics:s0
+
+# FlickerFree
+genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display-primary/msm_fb_ea_enable                                                          u:object_r:vendor_sysfs_graphics:s0

@@ -219,8 +219,12 @@ on boot
     enable vendor.dataqti
     enable vendor.dataadpl
 
-    # msm specific files that need to be created on /data
+    # Allow system to modify exposure adjustment state
+    chown system system /sys/devices/platform/soc/soc:qcom,dsi-display-primary/msm_fb_ea_enable
+    chmod 0660 /sys/devices/platform/soc/soc:qcom,dsi-display-primary/msm_fb_ea_enable
+
 on post-fs-data
+    # msm specific files that need to be created on /data
     mkdir /data/vendor/misc 01771 system system
 
     # Create directory used for dump collection
