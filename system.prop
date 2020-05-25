@@ -1,3 +1,6 @@
+# Bluetooth
+persist.vendor.bt.a2dp.aac_whitelist=false
+
 # Display
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 
