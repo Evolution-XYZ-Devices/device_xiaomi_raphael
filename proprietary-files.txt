@@ -1316,6 +1316,9 @@ vendor/bin/pm-service
 vendor/lib/libperipheral_client.so
 vendor/lib64/libperipheral_client.so
 
+# Power-off charging daemon - from miui_CMI_20.9.28_171a6c0851_11.0.zip
+-bin/charger:bin/chargeonlymode|c745c3febb01b2b6a868a30ddb7bd8c1c343b3e7
+
 # QCC TR
 #-vendor/app/QCC-TR-UI/QCC-TR-UI.apk
 vendor/bin/qcc-trd
