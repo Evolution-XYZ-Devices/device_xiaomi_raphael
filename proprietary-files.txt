@@ -621,8 +621,8 @@ vendor/lib64/vendor.qti.gnss@4.0-service.so
 vendor/lib64/vendor.qti.gnss@4.0.so
 vendor/lib64/vendor.qti.hardware.cacert@1.0.so
 
-# Graphics (DRM) - from hanoip RRI31.Q1-42-24-4
-vendor/lib64/libsdedrm.so|bccd71afeb56529b457699bdd179d571830caa16
+# Graphics (DRM) - from NX627J 20201029.204053
+vendor/lib64/libsdedrm.so|582910d21139781ad9e414c35207584f51e035e2
 
 # Graphics (HDR) - from LA.UM.9.1.r1-12900.02-SMxxx0.QSSI12.0
 vendor/lib64/libhdr_tm.so|a222a7d838735c5ce73f06d4096fea3ca19611c8
