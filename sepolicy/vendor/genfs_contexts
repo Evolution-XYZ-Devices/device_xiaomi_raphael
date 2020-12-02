@@ -36,3 +36,6 @@ genfscon sysfs /class/drm/card0/sde-crtc-0/measured_fps    u:object_r:vendor_sys
 
 # FlickerFree
 genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display-primary/msm_fb_ea_enable                                                          u:object_r:vendor_sysfs_graphics:s0
+
+# HBM
+genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display-primary/hbm                                                                       u:object_r:vendor_sysfs_graphics:s0
