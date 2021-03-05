@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2019 The LineageOS Project
 
@@ -39,4 +40,7 @@
          Should be enabled for OLED devices to reduce/prevent burn in on the status bar
          and on the navigation bar and disabled for all other devices. -->
     <bool name="config_statusBarBurnInProtection">true</bool>
+
+    <!-- Pocket Lock -->
+    <bool name="config_pocketUseLightSensor">false</bool>
 </resources>
