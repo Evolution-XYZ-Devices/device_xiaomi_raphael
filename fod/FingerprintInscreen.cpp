@@ -44,9 +44,6 @@
 #define FOD_SENSOR_Y 1931
 #define FOD_SENSOR_SIZE 190
 
-#define DIM_LAYER_HBM_PATH "/sys/devices/platform/soc/soc:qcom,dsi-display-primary/dimlayer_hbm"
-#define DIM_LAYER_HBM_ON 1
-#define DIM_LAYER_HBM_OFF 0
 
 namespace {
 
@@ -74,6 +71,7 @@ static bool readBool(int fd) {
 
     return c != '0';
 }
+
 }  // anonymous namespace
 namespace vendor {
 namespace lineage {
@@ -142,13 +140,11 @@ Return<void> FingerprintInscreen::onRelease() {
 
 Return<void> FingerprintInscreen::onShowFODView() {
     set(FOD_STATUS_PATH, FOD_STATUS_ON);
-    set(DIM_LAYER_HBM_PATH, DIM_LAYER_HBM_ON);
     return Void();
 }
 
 Return<void> FingerprintInscreen::onHideFODView() {
     set(FOD_STATUS_PATH, FOD_STATUS_OFF);
-    set(DIM_LAYER_HBM_PATH, DIM_LAYER_HBM_OFF);
     return Void();
 }
 
