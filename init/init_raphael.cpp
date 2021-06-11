@@ -105,24 +105,26 @@ void vendor_load_properties() {
     if (region == "GLOBAL") {
         model = "Mi 9T Pro";
         device = "raphael";
+        fingerprint =
+                "Xiaomi/raphael/raphael:10/QKQ1.190825.002/V12.0.4.0.QFKMIXM:user/release-keys";
         description = "raphael-user 10 QKQ1.190825.002 V12.0.4.0.QFKMIXM release-keys";
         mod_device = "raphael_global";
     } else if (region == "CN") {
         model = "Redmi K20 Pro";
         device = "raphael";
-        description = "raphael-user 10 QKQ1.190825.002 V12.0.6.0.QFKCNXM release-keys";
+        fingerprint =
+                "Xiaomi/raphael/raphael:11/RKQ1.200826.002/V12.5.4.0.RFKCNXM:user/release-keys";
+        description = "raphael-user 11 RKQ1.200826.002 V12.5.4.0.RFKCNXM release-keys";
     } else if (region == "INDIA") {
         model = "Redmi K20 Pro";
         device = "raphaelin";
-        description = "raphaelin-user 10 QKQ1.190825.002 V12.0.4.0.QFKINXM release-keys";
+        fingerprint =
+                "Xiaomi/raphaelin/raphaelin:10/QKQ1.190825.002/V12.0.5.0.QFKINXM:user/release-keys";
+        description = "raphaelin-user 10 QKQ1.190825.002 V12.0.5.0.QFKINXM release-keys";
         mod_device = "raphaelin_in_global";
     }
 
-    property_override("ro.apex.updatable", "false");
-    
-    // SafetyNet workaround
-    property_override("ro.boot.verifiedbootstate", "green");
-
+    set_ro_build_prop("fingerprint", fingerprint);
     set_ro_product_prop("device", device);
     set_ro_product_prop("model", model);
     property_override("ro.build.description", description.c_str());
