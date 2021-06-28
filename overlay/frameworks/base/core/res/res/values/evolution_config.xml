@@ -48,4 +48,7 @@
 
     <!-- Component name of popup camera service -->
     <string name="config_popUpCameraServiceComponentName" translatable="false">org.lineageos.settings/org.lineageos.settings.popupcamera.PopupCameraService</string>
+
+    <!-- Default FOD pressed icon color -->
+    <integer name="config_pressed_fod_icon">0</integer>
 </resources>
