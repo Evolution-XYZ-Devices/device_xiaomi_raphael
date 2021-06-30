@@ -119,8 +119,8 @@ void vendor_load_properties() {
         model = "Redmi K20 Pro";
         device = "raphaelin";
         fingerprint =
-                "Xiaomi/raphaelin/raphaelin:10/QKQ1.190825.002/V12.0.5.0.QFKINXM:user/release-keys";
-        description = "raphaelin-user 10 QKQ1.190825.002 V12.0.5.0.QFKINXM release-keys";
+                "Xiaomi/raphaelin/raphaelin:10/QKQ1.190825.002/V12.0.6.0.QFKINXM:user/release-keys";
+        description = "raphaelin-user 10 QKQ1.190825.002 V12.0.6.0.QFKINXM release-keys";
         mod_device = "raphaelin_in_global";
     }
 
