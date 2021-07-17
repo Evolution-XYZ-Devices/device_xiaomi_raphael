@@ -23,12 +23,6 @@ persist.vendor.cne.feature=1
 # Charger
 ro.charger.enable_suspend=true
 
-# Dolby
-persist.vendor.audio_fx.current=dolby
-ro.vendor.dolby.dax.version=DS1_2.2.0.0_r1
-vendor.audio.dolby.ds2.enabled=true
-vendor.audio.dolby.ds2.hardbypass=true
-
 # DPM
 persist.vendor.dpm.feature=1
 persist.vendor.dpm.loglevel=0

@@ -764,31 +764,6 @@ vendor/lib64/vendor.display.color@1.4.so
 vendor/lib64/vendor.display.color@1.5.so
 vendor/lib64/vendor.display.postproc@1.0.so
 
-# Dolby
--system_ext/priv-app/MotoDolbyV3/MotoDolbyV3.apk|197603a87c428f20e9c9f34dbe02bef9
-system_ext/etc/permissions/com.motorola.dolby.dolbyui.xml|d5c25b2522094346257a5ff0f4317c992b54d1fc
-system_ext/etc/permissions/moto-checkin.xml|39d1beed1802a1b3bba452cfc51d3ac0bf922614
-system_ext/etc/permissions/privapp-com.dolby.daxservice.xml|854a54ffa904eb69bf439a7493f6f805a091c0f6
-system_ext/etc/sysconfig/config-com.dolby.daxservice.xml|2092151d56b707f3fe0ef68196906b213753d46e
-system_ext/etc/sysconfig/config-com.motorola.dolby.dolbyui.xml|66ae80afa96e2e04433c2f4b3e92b6e20d64f2ad
-system_ext/framework/moto-checkin.jar|97daf710e97d02c7ec2aab58521949b7d32c9a2b
--system_ext/priv-app/daxService/daxService.apk|d40a326ea68b0fae23a7d09cfa40183a
-vendor/bin/hw/vendor.dolby.hardware.dms@1.0-service|7207a97fd3f00c854be4e4ddee98c881c61c2266
-vendor/etc/dolby/dax-default.xml|7161461c833cfe6afd512bf1d5277d933394ddde
-vendor/etc/init/vendor.dolby.hardware.dms@1.0-service.rc|4dd7bfa50d310e67902845faabd47653
-vendor/etc/media_codecs_dolby_audio.xml|7c9ae775a9d3d974494531c85e4d5f38ff603e25
-vendor/lib/libdapparamstorage.so|6fce779d3b4f21783d3d96e82f9b185107bbab38
-vendor/lib/libstagefright_soft_ddpdec.so|130b9da07e3c4a4ec04142049246eba18f1c350f
-vendor/lib/libstagefrightdolby.so|bdb088401b31fe3df302966a7c5a3da903267769
-vendor/lib/vendor.dolby.hardware.dms@1.0.so|c1d8cea6e281a2d5c497b24d55f5703f0bcc2860
-vendor/lib/soundfx/libswdap.so|0bd57dec350fb40ef3222723e59a7d5fe503ca7f
-vendor/lib64/libdapparamstorage.so|c54376a54043115f11154b47b10f6156f904ed00
-vendor/lib64/libdlbdsservice.so|77e3a0d44ce95c7e5139badb94087ea58211b022
-vendor/lib64/libstagefrightdolby.so|6c53850940178ea8d7ce2344f24c2ff8de3273b4
-vendor/lib64/vendor.dolby.hardware.dms@1.0-impl.so|7afb6907a83aa7c9faa7308ae5b39338eadac1c8
-vendor/lib64/vendor.dolby.hardware.dms@1.0.so|f3593ce869d036f98ddc7fc8223a8b55dcf0ca36
-vendor/lib64/soundfx/libswdap.so|be0056eb6359158a5f6aa5e2a8ed0fa260a82949
-
 # DPM
 -framework/tcmclient.jar
 system_ext/bin/dpmd
