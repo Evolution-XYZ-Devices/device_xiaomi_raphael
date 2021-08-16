@@ -1,4 +1,4 @@
-# All unpinned blobs here are extracted from raphael-user 11 RKQ1.200826.002 21.6.30 release-keys
+# All unpinned blobs here are extracted from raphael-user 11 RKQ1.200826.002 V12.5.1.0.RFKEUXM release-keys
 
 # ADSPRPC
 vendor/bin/adsprpcd
@@ -47,6 +47,8 @@ vendor/lib/rfsa/adsp/libsnpe_dsp_v65_domains_v2_skel.so
 vendor/lib/rfsa/adsp/libsnpe_dsp_v66_domains_v2_skel.so
 vendor/lib/rfsa/adsp/libsns_device_mode_skel.so
 vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
+vendor/lib/rfsa/adsp/misound_karaoke_res.bin
+vendor/lib/rfsa/adsp/misound_karaokemix_res.bin
 vendor/lib/rfsa/adsp/misound_res.bin
 vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so
 vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so
@@ -57,11 +59,10 @@ vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so|e25f1087edc95d2ff76c1e37787ca37aae2cf175
 system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 system_ext/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
 
-# HotwordEnrollment - from hentai_raphael-Rika-ota-rq2a.210405.005-Furry.04070341
--product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk;PRESIGNED|ac7411971458b7e8c7e45cbdd2189164726924de
--product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk;PRESIGNED|4de07927eb20e6869d9bddc72a558e1ca3ad785f
-system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml|563a58554d9c0dd0608552b644fbf74519a447bb
--system_ext/framework/com.android.hotwordenrollment.common.util.jar|bef92589e75a6da6043f85f4b9b0e85866429624
+# HotwordEnrollment - from Hentai
+-product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk;PRESIGNED|62e301d2f386771facd9a9aa546c0fcc241116da
+-product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk;PRESIGNED|8639661f6fad570723bc6f2759da76604bd804fa
+system_ext/framework/com.android.hotwordenrollment.common.util.jar;PRESIGNED|bef92589e75a6da6043f85f4b9b0e85866429624
 
 # Audio
 vendor/bin/audioflacapp
@@ -792,22 +793,9 @@ vendor/lib64/libdpmqmihal.so
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
 -vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
-#vendor/lib/libwvkeybox.so
-#vendor/lib64/libwvkeybox.so
 vendor/lib64/libwvhidl.so
-
-# DRM widevine - from MIUI V12.0.4.0.QFKINXM
-vendor/lib/liboemcrypto.so|7a8be0a1b2b6f7441c658dd1a1550510c8c154ee
-vendor/lib64/liboemcrypto.so|b99e70b63bb2fa92fd5660382b6b16e1998968cc
-modem/image/widevine.b00:vendor/firmware/widevine.b00|d306b8986e114b8eecf3e18e1bf66d39cdbc9389
-modem/image/widevine.b01:vendor/firmware/widevine.b01|bc5367fe588bad33af4d877e79947df8f32c9941
-modem/image/widevine.b02:vendor/firmware/widevine.b02|f270abc3c95c975bd200320b3af7bf9b1a52173e
-modem/image/widevine.b03:vendor/firmware/widevine.b03|517be4e5bed7dd8cafec2b6dcaf0f7a1127d0566
-modem/image/widevine.b04:vendor/firmware/widevine.b04|9c614f6accd047ae0ac7e99ef99f04afde1175aa
-modem/image/widevine.b05:vendor/firmware/widevine.b05|706191d55a1433a1c03a9e2571972b6b7400950d
-modem/image/widevine.b06:vendor/firmware/widevine.b06|4da05c9c81331f41e819674fe09d7fdf19f1e588
-modem/image/widevine.b07:vendor/firmware/widevine.b07|bb2ca7694e882efa803b2a9dcb6e6a91e6b60eb2
-modem/image/widevine.mdt:vendor/firmware/widevine.mdt|ae3c7f13f2a86d69aa9e32006551e1983d0d39a9
+vendor/lib/liboemcrypto.so
+vendor/lib64/liboemcrypto.so
 
 # FASTCV
 vendor/lib/rfsa/adsp/libapps_mem_heap.so
@@ -825,10 +813,13 @@ vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
 -vendor/etc/vintf/manifest/android.hardware.biometrics.fingerprint@2.1-service.xml
 vendor/lib/hw/fingerprint.goodix_fod.so
 vendor/lib/libgf_hal.so
+vendor/lib/vendor.goodix.hardware.biometrics.fingerprint@2.1.so
 vendor/lib64/hw/fingerprint.goodix_fod.so
 vendor/lib64/libarm_proxy_skel.so
 vendor/lib64/libgf_hal.so
 vendor/lib64/libhvx_proxy_stub.so
+vendor/lib64/vendor.goodix.hardware.biometrics.fingerprint@2.1.so
+vendor/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so
 
 # Firmware (ipa)
 vendor/firmware/ipa_uc.b00
@@ -1060,6 +1051,7 @@ vendor/etc/sound_trigger_mixer_paths_wcd9340_qrd.xml
 vendor/etc/sound_trigger_platform_info.xml
 vendor/lib/hw/android.hardware.soundtrigger@2.2-impl.so
 vendor/lib/hw/android.hardware.soundtrigger@2.3-impl.so
+vendor/lib/hw/sound_trigger.primary.msmnile.so
 vendor/lib/libadpcmdec.so
 vendor/lib/libgcs-calwrapper.so
 vendor/lib/libgcs-ipc.so
@@ -1070,16 +1062,13 @@ vendor/lib/libmulawdec.so
 vendor/lib/libsmwrapper.so
 vendor/lib64/hw/android.hardware.soundtrigger@2.2-impl.so
 vendor/lib64/hw/android.hardware.soundtrigger@2.3-impl.so
+vendor/lib64/hw/sound_trigger.primary.msmnile.so
 vendor/lib64/libgcs-calwrapper.so
 vendor/lib64/libgcs-ipc.so
 vendor/lib64/libgcs-osal.so
 vendor/lib64/libgcs.so
 vendor/lib64/liblistensoundmodel2.so
 vendor/lib64/libmulawdec.so
-
-# Listen (sound_trigger primary)
-vendor/lib/hw/sound_trigger.primary.msmnile.so
-vendor/lib64/hw/sound_trigger.primary.msmnile.so
 
 # Media
 vendor/etc/configstore/vpp.configstore.xml
@@ -1290,9 +1279,6 @@ vendor/bin/pm-proxy
 vendor/bin/pm-service
 vendor/lib/libperipheral_client.so
 vendor/lib64/libperipheral_client.so
-
-# Power-off charging daemon - from miui_CMI_20.9.28_171a6c0851_11.0.zip
--bin/charger:bin/chargeonlymode|c745c3febb01b2b6a868a30ddb7bd8c1c343b3e7
 
 # QCC TR
 #-vendor/app/QCC-TR-UI/QCC-TR-UI.apk
@@ -1593,7 +1579,6 @@ system_ext/lib64/vendor.qti.ims.rcsconfig@1.1.so
 system_ext/lib64/vendor.qti.ims.rcsconfig@2.0.so
 system_ext/lib64/vendor.qti.ims.rcsconfig@2.1.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
--system_ext/priv-app/ims/ims.apk
 vendor/bin/ims_rtp_daemon
 vendor/bin/imsdatadaemon
 vendor/bin/imsqmidaemon
@@ -1677,6 +1662,10 @@ vendor/lib64/vendor.qti.ims.rcsconfig@2.0.so
 vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so
+
+# Telephony - from LA.QSSI.11.0.r1-07800-qssi.0.
+-system_ext/framework/qti-telephony-common.jar|7d684c5220f5a2a5778bac40f95d852de68dd1a6
+-system_ext/priv-app/ims/ims.apk|61507a8ad66f4f299fe66e11ff71eeb3e2fe5259
 
 # Sensor (Configs)
 vendor/etc/sensors/config/adux1050_0.json
