@@ -113,14 +113,14 @@ void vendor_load_properties() {
         model = "Redmi K20 Pro";
         device = "raphael";
         fingerprint =
-                "Xiaomi/raphael/raphael:11/RKQ1.200826.002/V12.5.4.0.RFKCNXM:user/release-keys";
-        description = "raphael-user 11 RKQ1.200826.002 V12.5.4.0.RFKCNXM release-keys";
+                "Xiaomi/raphael/raphael:11/RKQ1.200826.002/V12.5.5.0.RFKCNXM:user/release-keys";
+        description = "raphael-user 11 RKQ1.200826.002 V12.5.5.0.RFKCNXM release-keys";
     } else if (region == "INDIA") {
         model = "Redmi K20 Pro";
         device = "raphaelin";
         fingerprint =
-                "Xiaomi/raphaelin/raphaelin:10/QKQ1.190825.002/V12.0.6.0.QFKINXM:user/release-keys";
-        description = "raphaelin-user 10 QKQ1.190825.002 V12.0.6.0.QFKINXM release-keys";
+                "Xiaomi/raphaelin/raphaelin:11/RKQ1.200826.002/V12.5.1.0.RFKINXM:user/release-keys";
+        description = "raphaelin-user 11 RKQ1.200826.002 V12.5.1.0.RFKINXM release-keys";
         mod_device = "raphaelin_in_global";
     }
 

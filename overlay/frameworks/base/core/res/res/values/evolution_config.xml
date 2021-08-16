@@ -16,9 +16,7 @@
 ** limitations under the License.
 */
 -->
-
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-
     <!-- Charge sysfs node and value for Adaptive charging-->
     <string name="config_adaptiveChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/input_suspend</string>
     <string name="config_adaptiveChargingSuspendValue" translatable="false">1</string>
@@ -26,22 +24,6 @@
 
     <!-- Whether to use light sensor to evaluate pocket state -->
     <bool name="config_pocketUseLightSensor">false</bool>
-
-    <!-- Display mode remapping table.
-         If the mode names returned by the backend do not match
-         the predefined and translated strings in the Settings
-         app, they can be remapped here. The format is
-         "oldname:newname", one per entry. -->
-    <string-array name="config_displayModeMappings" translatable="false">
-        <item>38-default-OLED:standard</item>
-        <item>01-warm:reading</item>
-        <item>02-cool:dynamic</item>
-        <item>P3_CE:dci_p3</item>
-        <item>srgb_d65:srgb</item>
-    </string-array>
-
-    <!-- Should we filter any display modes which are unampped? -->
-    <bool name="config_filterDisplayModes">true</bool>
 
     <!-- If not zero, limits the internal screen recorder's framerate to the set value. -->
     <integer name="config_screenRecorderMaxFramerate">60</integer>
@@ -51,10 +33,4 @@
 
     <!-- Default FOD pressed icon color -->
     <integer name="config_fod_pressed_color">0</integer>
-
-    <!-- The list of components which should be automatically disabled for a specific device. -->
-    <string-array name="config_deviceDisabledComponents" translatable="false">
-        <item>com.google.android.gms/com.google.android.gms.nearby.discovery.service.DiscoveryService</item>
-        <item>com.google.android.gms/com.google.android.gms.nearby.messages.service.NearbyMessagesService</item>
-    </string-array>
 </resources>

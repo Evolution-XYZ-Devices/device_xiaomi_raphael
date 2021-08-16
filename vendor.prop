@@ -6,7 +6,7 @@ persist.vendor.audio.fluence.speaker=true
 persist.vendor.audio.fluence.tmic.enabled=false
 persist.vendor.audio.fluence.voicecall=true
 persist.vendor.audio.fluence.voicecomm=true
-persist.vendor.audio.fluence.voicerec=true
+persist.vendor.audio.fluence.voicerec=false
 persist.vendor.audio.hifi=false
 persist.vendor.audio.ras.enabled=false
 persist.vendor.audio.ring.filter.mask=0
@@ -101,16 +101,6 @@ camera.disable_zsl_mode=true
 # Crypto
 ro.crypto.volume.filenames_mode=aes-256-cts
 
-# Dalvik
-pm.dexopt.boot=verify
-pm.dexopt.first-boot=verify
-pm.dexopt.install=speed-profile
-dalvik.vm.image-dex2oat-filter=speed
-dalvik.vm.image-dex2oat-threads=8
-dalvik.vm.dex2oat-filter=speed
-dalvik.vm.dex2oat-threads=8
-dalvik.vm.dex2oat64.enabled=true
-
 # DRM
 drm.service.enabled=true
 
@@ -127,7 +117,7 @@ vendor.gatekeeper.disable_spu=true
 debug.egl.hw=0
 debug.mdpcomp.logs=0
 debug.sf.hw=0
-debug.sf.latch_unsignaled=0
+debug.sf.latch_unsignaled=1
 persist.sys.sf.color_saturation=1.0
 ro.gfx.driver.1=com.qualcomm.qti.gpudrivers.msmnile.api30
 ro.hardware.egl=adreno
@@ -159,7 +149,6 @@ vendor.power.pasr.enabled=true
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
-ro.vendor.perf.scroll_opt=true
 
 # Qualcomm System Daemon
 persist.vendor.qcomsysd.enabled=1
@@ -183,9 +172,6 @@ persist.vendor.radio.sib16_support=1
 
 # Shutdown
 sys.vendor.shutdown.waittime=500
-
-# Target specific Netflix custom property
-ro.netflix.bsp_rev=Q855-16947-1
 
 # USB
 vendor.usb.diag.func.name=diag

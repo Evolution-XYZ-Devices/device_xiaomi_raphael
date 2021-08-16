@@ -346,7 +346,7 @@ service hostapd_fst /vendor/bin/hw/hostapd -dd -g /data/vendor/wifi/hostapd/glob
     disabled
     oneshot
 
-service vendor.charger /system/bin/chargeonlymode
+service charger /system/bin/charger
     class charger
     user system
     group system graphics input
