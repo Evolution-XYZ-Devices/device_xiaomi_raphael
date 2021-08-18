@@ -260,6 +260,7 @@ PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.qcom.sh \
     init.qcom.usb.rc \
+    init.performance_level.rc \
     init.qcom.usb.sh \
     init.qti.dcvs.sh \
     init.raphael.rc \
