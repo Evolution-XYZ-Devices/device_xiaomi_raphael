@@ -27,7 +27,7 @@
     <!-- Battery Health -->
     <string name="config_batChargeCycle">/sys/class/power_supply/bms/cycle_count</string>
     <string name="config_batDesCap">/sys/class/power_supply/bms/charge_full_design</string>
-    <string name="config_batCurCap">/sys/class/power_supply/bms/charge_full</string>
+    <string name="config_batCurCap">/sys/class/power_supply/bms/charge_counter</string>
 
     <!-- Adaptive Charging -->
     <bool name="config_supportAdaptiveCharging">true</bool>
