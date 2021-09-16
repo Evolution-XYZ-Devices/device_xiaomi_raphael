@@ -106,8 +106,8 @@ void vendor_load_properties() {
         model = "Mi 9T Pro";
         device = "raphael";
         fingerprint =
-                "Xiaomi/raphael/raphael:11/RKQ1.200826.002/V12.5.1.0.RFKMIXM:user/release-keys";
-        description = "raphael-user 11 RKQ1.200826.002 V12.5.1.0.RFKMIXM release-keys";
+                "Xiaomi/raphael/raphael:11/RKQ1.200826.002/V12.5.2.0.RFKMIXM:user/release-keys";
+        description = "raphael-user 11 RKQ1.200826.002 V12.5.2.0.RFKMIXM release-keys";
         mod_device = "raphael_global";
     } else if (region == "CN") {
         model = "Redmi K20 Pro";
