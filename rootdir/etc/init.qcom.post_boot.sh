@@ -419,7 +419,6 @@ case "$target" in
         ;;
     esac
 
-    echo 0 > /sys/module/lpm_levels/parameters/sleep_disabled
     configure_memory_parameters
     target_type=`getprop ro.hardware.type`
 	if [ -f /sys/devices/soc0/soc_id ]; then
