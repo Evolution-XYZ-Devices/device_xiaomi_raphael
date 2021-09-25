@@ -43,4 +43,7 @@
 
     <!-- Pocket Lock -->
     <bool name="config_pocketUseLightSensor">false</bool>
+
+    <!-- Night Light FOD -->
+    <bool name="disable_fod_night_light">true</bool>  
 </resources>
