@@ -16,7 +16,7 @@ $(call inherit-product, vendor/xiaomi/raphael/raphael-vendor.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-arrow
+    $(LOCAL_PATH)/overlay-evolution
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
@@ -154,45 +154,29 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0.vendor \
     vendor.xiaomi.hardware.motor@1.0.vendor
 
-ifeq ($(ARROW_GAPPS), true)
-PRODUCT_PACKAGES += \
-    GCamGOPrebuilt
-else
 PRODUCT_PACKAGES += \
     Snap
-endif
 
 # Component overrides
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
 
 # Display
+TARGET_BOARD_PLATFORM := msmnile
+
+-include hardware/qcom-caf/sm8150/display/config/display-board.mk
+-include hardware/qcom-caf/sm8150/display/config/display-product.mk
+include vendor/qcom/opensource/commonsys-intf/display/config/display-interfaces-product.mk
+include vendor/qcom/opensource/commonsys-intf/display/config/display-product-system.mk
+
 PRODUCT_PACKAGES += \
-    android.hardware.graphics.composer@2.4-service \
-    android.hardware.graphics.mapper@3.0-impl-qti-display \
-    android.hardware.graphics.mapper@4.0-impl-qti-display \
-    android.hardware.memtrack@1.0-impl \
-    android.hardware.memtrack@1.0-service \
-    gralloc.msmnile \
-    hwcomposer.msmnile \
+    libdisplayconfig \
+    libqdMetaData \
+    libqdMetaData.system \
     libtinyxml \
     libvulkan \
-    memtrack.msmnile \
-    vendor.display.config@1.11.vendor \
-    vendor.display.config@1.5 \
     vendor.display.config@2.0 \
-    vendor.display.config@2.0.vendor \
-    vendor.qti.hardware.display.allocator-service \
-    vendor.qti.hardware.display.allocator@1.0.vendor \
-    vendor.qti.hardware.display.allocator@3.0.vendor \
-    vendor.qti.hardware.display.allocator@4.0.vendor \
-    vendor.qti.hardware.display.composer@1.0.vendor \
-    vendor.qti.hardware.display.composer@2.0.vendor \
-    vendor.qti.hardware.display.mapper@1.1.vendor \
-    vendor.qti.hardware.display.mapper@2.0.vendor \
-    vendor.qti.hardware.display.mapper@3.0.vendor \
-    vendor.qti.hardware.display.mapper@4.0.vendor \
-    vendor.qti.hardware.display.mapperextensions@1.1.vendor
+    vendor.qti.hardware.display.allocator@4.0.vendor
 
 PRODUCT_PACKAGES += \
     disable_configstore
