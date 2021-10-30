@@ -67,9 +67,6 @@ on boot
 
     chown system system /sys/class/thermal/thermal_message/sconfig
 
-    # Touchpanel
-    chown system system /sys/touchpanel/double_tap
-
 service remosaic_daemon /system/vendor/bin/remosaic_daemon
    class late_start
    user camera
@@ -94,6 +91,12 @@ on charger
     chown root system /mnt/vendor/persist
     chmod 0771 /mnt/vendor/persist
     mkdir /mnt/vendor/persist/subsys 0770 root system
+
+service vendor.power /vendor/bin/hw/android.hardware.power-service-qti
+    override
+    class hal
+    user system
+    group system input
 
 service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
     override
