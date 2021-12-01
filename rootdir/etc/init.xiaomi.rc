@@ -66,6 +66,7 @@ on boot
     mkdir /mnt/vendor/persist/camera 0755 system cameraserver
 
     chown system system /sys/class/thermal/thermal_message/sconfig
+    write /sys/class/thermal/thermal_message/sconfig 0
 
 service remosaic_daemon /system/vendor/bin/remosaic_daemon
    class late_start
