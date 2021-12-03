@@ -67,6 +67,7 @@ debug.sdm.support_writeback=0
 debug.sf.hw=0
 debug.egl.hw=0
 debug.sf.latch_unsignaled=0
+debug.hwui.renderer=skiagl
 debug.renderengine.backend=skiaglthreaded
 renderthread.skia.reduceopstasksplitting=true
 persist.demo.hdmirotationlock=false
