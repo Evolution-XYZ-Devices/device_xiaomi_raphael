@@ -1,0 +1,1 @@
+allow hal_sensor_default default_prop:file { getattr read open };
