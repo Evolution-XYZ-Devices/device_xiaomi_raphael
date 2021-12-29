@@ -4,3 +4,5 @@ allow init vendor_configs_file:file mounton;
 # Allow init to read and write to vendor_sysfs_graphics
 allow init vendor_sysfs_graphics:dir search;
 allow init vendor_sysfs_graphics:file rw_file_perms;
+
+allow init same_process_hal_file:file execute;
