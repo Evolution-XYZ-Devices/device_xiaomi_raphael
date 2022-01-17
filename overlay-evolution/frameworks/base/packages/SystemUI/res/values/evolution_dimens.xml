@@ -18,4 +18,7 @@
 <resources>
     <!-- Bottom margin size when fingerprint in display is active -->
     <dimen name="keyguard_indication_margin_bottom_fingerprint_in_display">25dp</dimen>
+
+    <!-- UDFPS recognizing animation vertical position offset -->
+    <dimen name="udfps_animation_offset">35dp</dimen>
 </resources>
