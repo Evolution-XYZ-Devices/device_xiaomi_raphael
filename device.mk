@@ -182,23 +182,15 @@ include vendor/qcom/opensource/commonsys-intf/display/config/display-product-sys
 
 PRODUCT_PACKAGES += \
     libdisplayconfig \
+    libdisplayconfig.qti \
     libqdMetaData \
     libqdMetaData.system \
     libtinyxml \
     libvulkan \
-    vendor.display.config@2.0 \
     vendor.qti.hardware.display.allocator@4.0.vendor
 
 PRODUCT_PACKAGES += \
     disable_configstore
-
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    ro.surface_flinger.has_wide_color_display=true \
-    ro.surface_flinger.has_HDR_display=true \
-    ro.surface_flinger.use_color_management=true \
-    ro.surface_flinger.wcg_composition_dataspace=143261696 \
-    ro.surface_flinger.protected_contents=true \
-    ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
 
 # Enable app/sf phase offset as durations. The numbers below are translated from the existing
 # positive offsets by finding the duration app/sf will have with the offsets.
