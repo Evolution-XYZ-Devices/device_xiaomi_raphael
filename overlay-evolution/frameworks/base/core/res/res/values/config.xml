@@ -41,8 +41,8 @@
     <!-- Pocket Lock -->
     <bool name="config_pocketUseLightSensor">false</bool>
 
-    <!-- Night Light FOD -->
-    <bool name="disable_fod_night_light">true</bool>
+    <!-- Whether to disable Night Light feature during UDFPS unlock -->
+    <bool name="config_udfpsDisableNightLight">true</bool>
 
     <!-- The list of components which should be automatically disabled for a specific device. -->
     <string-array name="config_deviceDisabledComponents" translatable="false">
