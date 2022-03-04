@@ -42,17 +42,6 @@ on init
     chmod 0660 /dev/drv8846_dev
     chmod 0660 /dev/akm09970
 
-on init && property:ro.boot.hwc=GLOBAL
-    setprop ro.boot.product.hardware.sku raphael
-
-on init && property:ro.boot.hwc=CN
-    setprop ro.boot.product.hardware.sku raphael
-
-on boot && property:ro.boot.product.hardware.sku=raphael
-    enable qti_esepowermanager_service_1_1
-    enable secureelement-hal_1_2
-    enable vendor.nfc_hal_service
-
 on post-fs-data
     mkdir /data/vendor/mac_addr 0770 system wifi
     mkdir /data/vendor/nfc 0770 nfc nfc
@@ -97,25 +86,3 @@ service vendor.power /vendor/bin/hw/android.hardware.power-service-qti
     class hal
     user system
     group system input
-
-service qti_esepowermanager_service_1_1 /vendor/bin/hw/vendor.qti.esepowermanager@1.1-service
-    override
-    class hal
-    user system
-    group nfc system
-    disabled
-
-service secureelement-hal_1_2 /vendor/bin/hw/vendor.qti.secure_element@1.2-service
-    override
-    class hal
-    user system
-    group system
-    disabled
-
-service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
-    override
-    class hal
-    user nfc
-    group nfc
-    task_profiles ServiceCapacityLow
-    disabled
