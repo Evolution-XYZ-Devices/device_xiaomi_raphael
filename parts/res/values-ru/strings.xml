@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020 The LineageOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <!-- Ambient settings -->
+    <string name="ambient_enable">Включить окружающий дисплей</string>
+
+    <!-- Popup camera settings -->
+    <string name="popup_title">Настройки фронтальной камеры</string>
+    <string name="popup_led_title">LED индикатор камеры</string>
+    <string name="popup_led_summary">Показывать LED индикацию при открытии и закрытии фронтальной камеры</string>
+    <string name="popup_sound_title">Звуковые эффекты камеры</string>
+    <string name="popup_sound_muqin">Ксилофон</string>
+    <string name="popup_sound_yingyan">Кондор</string>
+    <string name="popup_sound_mofa">Магия</string>
+    <string name="popup_sound_jijia">Механизм</string>
+    <string name="popup_sound_chilun">Шестеренка</string>
+    <string name="popup_sound_cangmen">Дверь каюты</string>
+
+    <!-- Popup camera strings -->
+    <string name="popup_camera_tip">Предупреждение</string>
+    <string name="popup_camera_takeback_failed_calibrate">Невозможно закрыть фронтальную камеру! Попробуйте откалибровать ее</string>
+    <string name="popup_camera_popup_failed_calibrate">Невозможно открыть фронтальную камеру! Попробуйте откалибровать ее.</string>
+    <string name="popup_camera_calibrate_running">Фронтальная камера не может быть использована во время калибровки.</string>
+    <string name="popup_camera_calibrate_now">Откалибровать</string>
+    <string name="popup_camera_calibrate_failed">Не получилось откалибровать камеру</string>
+    <string name="popup_camera_calibrate_success">Откалибровано успешно. Вы можете использовать фронтальную камеру прямо сейчас</string>
+
+    <!-- Haptic Level Settings -->
+    <string name="haptic_title">Тактильный отклик</string>
+    <string name="haptic_warning">Установка слишком высокого уровня тактильного отклика может привести к необратимому повреждению оборудования, используйте на свой страх и риск</string>
+    <string name="haptic_summary">Настройка интенсивности вибрации</string>
+    <string name="haptic_level_title">Уровень</string>
+    <string name="haptic_level_summary">Уровень интенсивности вибрации</string>
+    <string name="haptic_level_summary_incompatible">Функция не поддерживается</string>
+
+    <!-- Dirac settings -->
+    <string name="dirac_enable">Использовать улучшение  звука Mi</string>
+    <string name="dirac_title">Улучшение звука Mi</string>
+    <string name="dirac_summary">Оптимизируйте качество звука с Dirac, Hi-Fi</string>
+    <string name="dirac_headset_title">Выберите тип наушников</string>
+    <string name="dirac_preset_title">Выберите предустановку</string>
+
+    <!-- Dirac settings: Hi-Fi -->
+    <string name="dirac_hifi_title">Hi-Fi</string>
+    <string name="dirac_hifi_summary">Уменьшает шум и искажения. Улучшает качество звука</string>
+    <string name="dirac_hifi_enable_title">Включить Hi-fi</string>
+
+    <!-- Dirac settings: Equalizer presets -->
+    <string name="dirac_preset_default">По умолчанию</string>
+    <string name="dirac_preset_rock">Рок</string>
+    <string name="dirac_preset_jazz">Джаз</string>
+    <string name="dirac_preset_pop">Поп</string>
+    <string name="dirac_preset_classical">Классика</string>
+    <string name="dirac_preset_hiphop">Хип-Хоп</string>
+    <string name="dirac_preset_blues">Блюз</string>
+    <string name="dirac_preset_electronic">Электронная</string>
+    <string name="dirac_preset_country">Кантри</string>
+    <string name="dirac_preset_dance">Танцевальная</string>
+    <string name="dirac_preset_metal">Металл</string>
+    <string name="dirac_preset_bass_booster">Усиление баса</string>
+    <string name="dirac_preset_live">Живая музыка</string>
+    <string name="dirac_preset_balanced">Сбалансированный</string>
+    <string name="dirac_preset_bass_reduction">Меньше басов</string>
+    <string name="dirac_preset_treble_reduction">Меньше высоких частот</string>
+    <string name="dirac_preset_soft_bass">Мягкий бас</string>
+    <string name="dirac_preset_soft_treble">Мягкие высокие частоты</string>
+
+    <string name="music_headset_scenario_select">Выберите сцену</string>
+    <string name="music_headset_scenario_intelligent">Умная</string>
+    <string name="music_headset_scenario_music">Музыка</string>
+    <string name="music_headset_scenario_video">Видео</string>
+    <string name="music_headset_scenario_vocal">Голос</string>
+
+    <!-- Clear Speaker -->
+    <string name="clear_speaker_title">Очистка динамика</string>
+    <string name="clear_speaker_summary">Воспроизвести 30-и секундный звук для очистки динамика</string>
+    <string name="clear_speaker_description">Включите этот параметр 1-2 раз, если динамик немного загрязнен. Также поставьте звук на максимальную громкость.\n\nЕсли динамик сильно загрязнен, запустите этот параметр 2-5 раз и потрясите телефон. Динамик должен смотреть вниз</string>
+</resources>
