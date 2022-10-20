@@ -697,9 +697,6 @@ vendor/firmware/a640_zap.mdt
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml|563a58554d9c0dd0608552b644fbf74519a447bb
 system_ext/framework/com.android.hotwordenrollment.common.util.jar|bef92589e75a6da6043f85f4b9b0e85866429624
 
-# IFAA
--app/IFAAService/IFAAService.apk
-
 # IPA Firmware
 vendor/firmware/ipa_fws.b00
 vendor/firmware/ipa_fws.b01
@@ -833,9 +830,6 @@ vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc
 -vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mlipay.xml
 vendor/lib64/libmlipay.so
 vendor/lib64/libmlipay@1.1.so
-vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so
-vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so
-vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.0.so
 
 # Neural Networks - from LA.UM.9.1.r1-11500.02-SMxxx0.QSSI12.0
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti|727be3a0dd6c323b3156a3e2724b6dfff890cb6b

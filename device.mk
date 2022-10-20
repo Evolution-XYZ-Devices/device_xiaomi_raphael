@@ -7,9 +7,6 @@
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/xiaomi/raphael/raphael-vendor.mk)
 
-# MiuiCamera
-$(call inherit-product, vendor/xiaomi/miuicamera/config.mk)
-
 # Dalvik
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
@@ -158,9 +155,7 @@ PRODUCT_BOARD_PLATFORM := msmnile
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
-    android.hardware.camera.provider@2.4-service_64
-
-PRODUCT_PACKAGES += \
+    android.hardware.camera.provider@2.4-service_64 \
     libcamera2ndk_vendor \
     libdng_sdk.vendor \
     libgui_vendor \
@@ -169,6 +164,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0.vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor \
     vendor.xiaomi.hardware.motor@1.0.vendor
+
+# MiuiCamera
+$(call inherit-product, vendor/xiaomi/miuicamera/config.mk)
 
 # Display
 PRODUCT_PACKAGES += \
@@ -264,6 +262,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/hotword-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/hotword-hiddenapi-package-whitelist.xml \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
 
+# IFAA manager
+PRODUCT_PACKAGES += \
+    IFAAService
+
 # IPACM
 PRODUCT_PACKAGES += \
     ipacm \
@@ -316,12 +318,14 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml
 
-# MiuiCamera
-$(call inherit-product-if-exists, vendor/xiaomi/miuicamera/config.mk)
-
 # Native Public Libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
+
+# Mlipay
+PRODUCT_PACKAGES += \
+    vendor.xiaomi.hardware.mlipay@1.1.vendor \
+    vendor.xiaomi.hardware.mtdservice@1.0.vendor
 
 # Net
 PRODUCT_PACKAGES += \

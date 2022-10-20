@@ -1,12 +1,13 @@
 #
-# Copyright (C) 2021-2022 The LineageOS Project
+# Copyright (C) 2021 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/evolution_raphael.mk
+    $(LOCAL_DIR)/syberia_raphael.mk
 
 COMMON_LUNCH_CHOICES := \
-    evolution_raphael-userdebug \
-    evolution_raphael-eng
+    syberia_raphael-user \
+    syberia_raphael-userdebug \
+    syberia_raphael-eng

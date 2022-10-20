@@ -17,7 +17,6 @@ genfscon sysfs /devices/platform/soc/soc:qcom,gpubw/devfreq                     
 genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display-primary/dc_dim u:object_r:vendor_sysfs_graphics:s0
 
 # Graphics
-genfscon sysfs /class/drm/card0/sde-crtc-0/measured_fps                         u:object_r:vendor_sysfs_graphics:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display-primary               u:object_r:vendor_sysfs_graphics:s0
 
 # Health
