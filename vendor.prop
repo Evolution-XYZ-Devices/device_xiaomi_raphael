@@ -91,6 +91,7 @@ dalvik.vm.dex2oat64.enabled=true
 debug.hwui.renderer=skiagl
 debug.renderengine.backend=skiaglthreaded
 debug.sf.latch_unsignaled=1
+debug.sf.auto_latch_unsignaled=0
 debug.sf.enable_gl_backpressure=1
 debug.sf.disable_client_composition_cache=1
 debug.sf.enable_transaction_tracing=false
