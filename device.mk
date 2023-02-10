@@ -553,3 +553,6 @@ PRODUCT_COPY_FILES += \
 # Enable zygote critical window.
 PRODUCT_PROPERTY_OVERRIDES += \
     zygote.critical_window.minute=10
+    
+# Disable SDM Scalar  
+PRODUCT_PROPERTY_OVERRIDES += vendor.display.disable_scaler=1
