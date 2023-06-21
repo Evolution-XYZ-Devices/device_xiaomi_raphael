@@ -27,6 +27,8 @@ PRODUCT_PACKAGES += \
     CarrierConfigOverlay \
     FaceUnlockServiceOverlay \
     FrameworksResRaphael \
+    SettingsProviderOverlayGlobal \
+    SettingsProviderOverlayIndia \
     SettingsResRaphael \
     SystemUIResRaphael \
     TelephonyResCommon \
