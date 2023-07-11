@@ -59,6 +59,10 @@ on boot
 
     chown system system /sys/class/thermal/thermal_message/sconfig
 
+    # Fast Charge
+    chown system system /sys/class/qcom-battery/restrict_chg
+    chmod 0666 /sys/class/qcom-battery/restrict_chg
+
 on charger
     mkdir /mnt/vendor/persist
     chown root system /mnt/vendor/persist
