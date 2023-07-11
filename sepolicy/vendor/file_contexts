@@ -15,6 +15,13 @@
 /dev/goodix_fp                                                  u:object_r:fingerprint_device:s0
 /dev/thermal(/.*)?                                              u:object_r:thermal_link_device:s0
 
+# Dolby
+/data/vendor/dolby(/.*)?                                                               u:object_r:vendor_data_file:s0
+/(vendor|system/vendor)/bin/hw/vendor\.dolby\.hardware\.dms@2\.0-service               u:object_r:hal_dms_default_exec:s0
+
+# Fastcharge HAL
+/(vendor|system/vendor)/bin/hw/vendor\.lineage\.fastcharge@[0-9]\.[0-9]-service\.xiaomi_raphael          u:object_r:hal_lineage_fastcharge_default_exec:s0
+
 # Fingerprint
 /data/vendor/goodix(/.*)?                                       u:object_r:fingerprint_data_file:s0
 /data/vendor/fpc(/.*)?                                          u:object_r:fingerprint_data_file:s0
@@ -72,8 +79,3 @@
 
 # Zram
 /data/per_boot(/.*)?                                            u:object_r:per_boot_file:s0
-
-
-# Dolby
-/data/vendor/dolby(/.*)?                                                               u:object_r:vendor_data_file:s0
-/(vendor|system/vendor)/bin/hw/vendor\.dolby\.hardware\.dms@2\.0-service               u:object_r:hal_dms_default_exec:s0

@@ -234,6 +234,10 @@ PRODUCT_COPY_FILES += \
 
 TARGET_EXCLUDES_AUDIOFX := true
 
+# Fastcharge
+PRODUCT_PACKAGES += \
+    vendor.lineage.fastcharge@1.0-service.xiaomi_raphael
+
 # F2FS
 PRODUCT_PACKAGES += \
     sg_write_buffer \
