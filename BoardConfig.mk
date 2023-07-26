@@ -81,6 +81,7 @@ BOARD_HAVE_QCOM_FM := true
 # HIDL
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/hidl/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/hidl/compatibility_matrix.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/hidl/framework_compatibility_matrix.xml
 ODM_MANIFEST_SKUS += nfc nfc_ese
 ODM_MANIFEST_NFC_FILES := $(DEVICE_PATH)/hidl/manifest_nfc.xml
 ODM_MANIFEST_NFC_ESE_FILES := \
