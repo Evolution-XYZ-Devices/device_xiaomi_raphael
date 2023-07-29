@@ -470,6 +470,7 @@
         <item>"/system/lib64/libhwui.so"</item>
         <item>"/system/lib64/libui.so"</item>
         <item>"/system/lib64/libvulkan.so"</item>
+        <item>"/vendor/lib64/hw/fingerprint.goodix_fod.msmnile.so"</item>
         <item>"/system/system_ext/priv-app/SystemUIGoogle/SystemUI.apk"</item>
         <item>"/system_ext/priv-app/MotoDolbyDax3/MotoDolbyDax3.apk"</item>
         <item>"/system_ext/priv-app/daxService/daxService.apk"</item>
