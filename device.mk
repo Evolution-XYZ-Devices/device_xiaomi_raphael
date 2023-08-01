@@ -484,6 +484,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     sensors.raphael_udfps \
+    sensors.raphael_double_tap \
     sensors.raphael_double_tap
 
 PRODUCT_COPY_FILES += \
