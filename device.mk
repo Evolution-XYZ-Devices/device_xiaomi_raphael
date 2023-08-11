@@ -335,6 +335,7 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
 # MiuiCamera
+TARGET_CAMERA_USES_NEWER_HIDL_OVERRIDE_FORMAT := true
 TARGET_INCLUDES_MIUI_CAMERA := true
 $(call inherit-product-if-exists, vendor/xiaomi/miuicamera/config.mk)
 

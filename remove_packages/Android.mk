@@ -13,6 +13,7 @@ LOCAL_OVERRIDES_PACKAGES += DevicePolicyPrebuilt
 LOCAL_OVERRIDES_PACKAGES += DiagnosticsToolPrebuilt
 LOCAL_OVERRIDES_PACKAGES += FilesPrebuilt
 LOCAL_OVERRIDES_PACKAGES += HealthConnectPrebuilt
+LOCAL_OVERRIDES_PACKAGES += MaestroPrebuilt
 LOCAL_OVERRIDES_PACKAGES += NgaResources
 LOCAL_OVERRIDES_PACKAGES += Gallery2 Photos PhotoTable
 LOCAL_OVERRIDES_PACKAGES += Papers PixelLiveWallpaperPrebuilt
