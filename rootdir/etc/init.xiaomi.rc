@@ -62,6 +62,8 @@ on boot
     # Fast Charge
     chown system system /sys/class/qcom-battery/restrict_chg
     chmod 0666 /sys/class/qcom-battery/restrict_chg
+    chown system system /sys/class/qcom-battery/restrict_cur
+    chmod 0666 /sys/class/qcom-battery/restrict_cur
 
 on charger
     mkdir /mnt/vendor/persist
