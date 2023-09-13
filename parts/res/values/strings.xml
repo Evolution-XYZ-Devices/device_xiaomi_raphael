@@ -15,6 +15,9 @@
      limitations under the License.
 -->
 <resources>
+    <!-- Xiaomi Parts -->
+    <string name="app_name">Xiaomi Parts</string>
+
     <!-- Popup camera settings -->
     <string name="popup_title">Front camera settings</string>
     <string name="popup_led_title">Camera LED</string>
