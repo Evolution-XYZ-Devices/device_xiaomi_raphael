@@ -51,7 +51,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Vendor init
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
-    $(LOCAL_PATH)/configs/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc
+    $(LOCAL_PATH)/configs/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc \
+    $(LOCAL_PATH)/configs/etc/init/android.hardware.sensors@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors@1.0-service.rc
+
 
 # Permissions
 PRODUCT_COPY_FILES += \
