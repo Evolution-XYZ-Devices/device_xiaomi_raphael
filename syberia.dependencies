@@ -55,9 +55,9 @@
    },
    {
       "remote":"gitlab",
-      "repository":"shaughzam/vendor_xiaomi_miuicamera",
+      "repository":"kondors1995/vendor_xiaomi_miuicamera",
       "target_path":"vendor/xiaomi/miuicamera",
-      "branch":"tiramisu"
+      "branch":"leica-5.0-raphael"
    },
    {
       "remote":"github",
