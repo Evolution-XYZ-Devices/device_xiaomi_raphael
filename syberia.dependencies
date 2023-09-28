@@ -70,5 +70,11 @@
       "repository":"SOVIET-ANDROID/vendor_xiaomi_raphael",
       "target_path":"vendor/xiaomi/raphael",
       "branch":"13.0"
+   },
+   {
+      "remote":"gitlab",
+      "repository":"varunhardgamer/trb_clang",
+      "target_path":"prebuilts/clang/host/linux-x86/clang-trb",
+      "branch":"main"
    }
 ]
