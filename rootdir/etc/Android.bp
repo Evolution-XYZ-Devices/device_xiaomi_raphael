@@ -2,6 +2,14 @@ prebuilt_etc {
     name: "fstab.qcom",
     src: "fstab.qcom",
     vendor: true,
+    required: ["fstab.qcom_ramdisk"],
+}
+
+prebuilt_etc {
+    name: "fstab.qcom_ramdisk",
+    src: "fstab.qcom",
+    filename_from_src: true,
+    ramdisk: true,
 }
 
 prebuilt_etc {
