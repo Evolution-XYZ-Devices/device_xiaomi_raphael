@@ -420,6 +420,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     XiaomiParts
 
+PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
+
 # Perf
 PRODUCT_PACKAGES += \
     libqti-perfd-client
