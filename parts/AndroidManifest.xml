@@ -38,7 +38,8 @@
         android:directBootAware="true"
         android:theme="@style/Theme.SubSettingsBase">
 
-        <receiver android:name=".BootCompletedReceiver">
+        <receiver android:name=".BootCompletedReceiver"
+                  android:exported="false">
             <intent-filter android:priority="1000">
                 <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -69,6 +70,7 @@
 
         <activity
             android:name=".popupcamera.PopupCameraSettingsActivity"
+            android:exported="false"
             android:label="@string/popup_title">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
@@ -89,6 +91,7 @@
 
         <activity
             android:name=".speaker.ClearSpeakerActivity" 
+            android:exported="false"
             android:label="@string/clear_speaker_title">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
