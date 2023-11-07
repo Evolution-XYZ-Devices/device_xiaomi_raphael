@@ -12,17 +12,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from raphael device
 $(call inherit-product, device/xiaomi/raphael/device.mk)
 
-# Inherit some common Suberia OS stuff.
-$(call inherit-product, vendor/syberia/common.mk)
-SYBERIA_BUILD_TYPE := OFFICIAL
-EXTRA_UDFPS_ANIMATIONS := true
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_INCLUDE_PIXEL_CHARGER := true
-TARGET_SUPPORTS_QUICK_TAP := true
-WITH_GMS := true
+# Inherit some common Lineage stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2340
+TARGET_SCREEN_WIDTH := 1080
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := syberia_raphael
+PRODUCT_NAME := lineage_raphael
 PRODUCT_DEVICE := raphael
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
