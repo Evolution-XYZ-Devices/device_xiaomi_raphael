@@ -183,7 +183,7 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.motor@1.0.vendor
 
 # MiuiCamera
-$(call inherit-product, vendor/xiaomi/miuicamera/config.mk)
+$(call inherit-product-if-exists, vendor/xiaomi/miuicamera/config.mk)
 
 # Display
 PRODUCT_PACKAGES += \
