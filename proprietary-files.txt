@@ -681,13 +681,13 @@ vendor/lib64/libkernelmanager.so|6e34cfed1b61ef27ac3740cf477e1ed836695513
 vendor/lib64/libllvm-glnext.so|47d15d132911de565a73af45f46c58b574ff7371
 vendor/lib64/libllvm-qcom.so|0ddee8bc3eb1bddc9661e12ca155841ad7802e29
 
-# Graphics (DRM) - from hanoip RRI31.Q1-42-24-4
-vendor/lib64/libsdedrm.so|bccd71afeb56529b457699bdd179d571830caa16
+# Graphics (DRM) - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
+vendor/lib64/libsdedrm.so|7cf5f4e7e4dacae88e317d3397fdf25dabe45b65
 
 # Graphics (HDR) - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
 vendor/lib64/libhdr_tm.so|a222a7d838735c5ce73f06d4096fea3ca19611c8
 
-# Graphics (SDM) -  from hanoip RRI31.Q1-42-24-4
+# Graphics (SDM) -  from from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.
 vendor/lib64/libqseed3.so|1395834daf3c6cd07acbdbc44110decb3be362c2
 vendor/lib64/libsdm-color.so|e82ee94b86f9c59044017ab527261a7aacbd6083
 vendor/lib64/libsdm-colormgr-algo.so|11b65733d87ff65633a5fe8f4207dde12391625c
