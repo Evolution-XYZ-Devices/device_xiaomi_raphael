@@ -29,7 +29,6 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Overlays
 PRODUCT_PACKAGES += \
-    ApertureOverlay \
     CarrierConfigOverlay \
     FaceUnlockServiceOverlay \
     FrameworksResRaphael \
