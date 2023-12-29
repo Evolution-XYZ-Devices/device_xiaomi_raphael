@@ -12,8 +12,9 @@
       "branch": "thirteen"
    },
    {
-      "repository": "kernel_xiaomi_raphael",
-      "target_path": "kernel/xiaomi/raphael"
+      "repository": "SOVIET-ANDROID/kernel_xiaomi_raphael",
+      "target_path": "kernel/xiaomi/raphael",
+      "branch": "14.0-DSP"
    },
    {
       "repository": "vendor_xiaomi_raphael",
