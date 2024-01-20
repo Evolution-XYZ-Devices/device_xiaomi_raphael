@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2020 Paranoid Android
+ * Copyright (C) 2020-2024 Paranoid Android
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -29,7 +29,7 @@ public class ClearSpeakerActivity extends CollapsingToolbarBaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        getFragmentManager().beginTransaction().replace(R.id.content_frame,
+        getSupportFragmentManager().beginTransaction().replace(R.id.content_frame,
                 new ClearSpeakerFragment(), TAG_CLEARSPEAKER).commit();
     }
 }

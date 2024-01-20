@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2020 The LineageOS Project
+ * Copyright (C) 2020-2024 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,11 +20,11 @@ import android.os.Bundle;
 
 import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
-import androidx.preference.PreferenceFragment;
+import androidx.preference.PreferenceFragmentCompat;
 
 import org.lineageos.settings.R;
 
-public class PopupCameraSettingsFragment extends PreferenceFragment implements
+public class PopupCameraSettingsFragment extends PreferenceFragmentCompat implements
         OnPreferenceChangeListener {
 
     @Override

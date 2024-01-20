@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2023 Paranoid Android
+ * Copyright (C) 2023-2024 Paranoid Android
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -26,14 +26,14 @@ import android.os.Looper;
 import android.util.Log;
 
 import androidx.preference.Preference;
-import androidx.preference.PreferenceFragment;
+import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.SwitchPreference;
 
 import org.lineageos.settings.R;
 
 import java.io.IOException;
 
-public class ClearSpeakerFragment extends PreferenceFragment implements
+public class ClearSpeakerFragment extends PreferenceFragmentCompat implements
         Preference.OnPreferenceChangeListener {
 
     private static final String TAG = "ClearSpeakerFragment";
