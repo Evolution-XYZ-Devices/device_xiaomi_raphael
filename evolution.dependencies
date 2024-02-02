@@ -8,8 +8,8 @@
       "target_path": "vendor/xiaomi/raphael"
    },
    {
-      "repository": "EvoX/vendor_xiaomi_miuicamera",
+      "repository": "evo-x/vendor_xiaomi_miuicamera",
       "target_path": "vendor/xiaomi/miuicamera",
-      "remote": "gitlab"
+      "remote": "bb"
    }
 ]
