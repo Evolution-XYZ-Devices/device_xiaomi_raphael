@@ -1,7 +1,9 @@
 [
    {
-      "repository": "kernel_xiaomi_raphael",
-      "target_path": "kernel/xiaomi/raphael"
+      "repository": "onettboots/bool-x_xiaomi_raphael",
+      "target_path": "kernel/xiaomi/raphael",
+      "remote": "github",
+      "branch": "dev/DSPcassOcd"
    },
    {
       "repository": "vendor_xiaomi_raphael",
