@@ -9,11 +9,11 @@ type persist_camera_file, vendor_persist_type, file_type;
 type proc_last_kmsg, fs_type, proc_type;
 type public_adsprpcd_file, file_type;
 
+# Livedisplay
+type vendor_sysfs_hbm, sysfs_type, fs_type;
+
 # Nodes
 type sysfs_fod, sysfs_type, fs_type;
 type sysfs_kgsl, sysfs_type, fs_type;
 type sysfs_msm_boot, fs_type, sysfs_type;
 type sysfs_touchpanel, fs_type, sysfs_type;
-
-# HBM
-type vendor_sysfs_hbm, sysfs_type, fs_type;
