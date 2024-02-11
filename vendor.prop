@@ -88,7 +88,6 @@ ro.crypto.volume.options=::v2
 dalvik.vm.dex2oat64.enabled=true
 
 # Display
-debug.hwui.renderer=skiagl
 debug.renderengine.backend=skiaglthreaded
 debug.sf.latch_unsignaled=1
 debug.sf.auto_latch_unsignaled=0
