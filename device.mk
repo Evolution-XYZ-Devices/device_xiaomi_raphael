@@ -419,6 +419,10 @@ PRODUCT_PACKAGES += \
     libstagefrighthw \
     libstagefright_omx.vendor
 
+# QDCM
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/etc/qdcm_calib_data_samsung_ea8076_fhd_cmd_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_samsung_ea8076_fhd_cmd_dsi_panel.xml
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 

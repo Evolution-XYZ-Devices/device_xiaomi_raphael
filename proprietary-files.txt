@@ -541,9 +541,6 @@ vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
 vendor/lib64/libdisp-aba.so|44993853ff9d4340e856e6f53d802f10372442d3
 vendor/lib64/libdisplayqos.so|5548732c916e629f18f45ce257ce843b679a136a
 
-# Display-Calibration - from raphael V12.5.5.0.RFKCNXM (Patched)
-vendor/etc/qdcm_calib_data_samsung_ea8076_fhd_cmd_dsi_panel.xml|466f515f4dce2e4138f894946024937f1e953a8f
-
 # ESE - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
 vendor/bin/hw/vendor.qti.esepowermanager@1.1-service|7339b9b331b357649aae521f84d3e56dd3d3def7
 vendor/etc/init/vendor.qti.esepowermanager@1.1-service.rc|23d2b5420086843f6be78889abf5c4fc8ed4ae41
