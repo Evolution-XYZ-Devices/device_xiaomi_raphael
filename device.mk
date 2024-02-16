@@ -211,14 +211,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     disable_configstore
 
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    ro.surface_flinger.has_wide_color_display=true \
-    ro.surface_flinger.has_HDR_display=true \
-    ro.surface_flinger.use_color_management=true \
-    ro.surface_flinger.wcg_composition_dataspace=143261696 \
-    ro.surface_flinger.protected_contents=true \
-    ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
-
 # HBM
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/etc/displayconfig/display_id_4630946693002713985.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946693002713985.xml
@@ -417,7 +409,11 @@ PRODUCT_PACKAGES += \
 
 # QDCM
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/etc/qdcm_calib_data_samsung_ea8076_fhd_cmd_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_samsung_ea8076_fhd_cmd_dsi_panel.xml
+    $(LOCAL_PATH)/configs/etc/qdcm_calib_data_samsung_ea8076_fhd_cmd_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_samsung_ea8076_fhd_cmd_dsi_panel.xml \
+    $(LOCAL_PATH)/configs/etc/sdr_config.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/sdr_config.cfg \
+    $(LOCAL_PATH)/configs/etc/hdr_config.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/hdr_config.cfg
+
+
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
