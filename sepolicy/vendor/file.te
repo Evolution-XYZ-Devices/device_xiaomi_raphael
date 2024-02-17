@@ -17,3 +17,4 @@ type sysfs_fod, sysfs_type, fs_type;
 type sysfs_kgsl, sysfs_type, fs_type;
 type sysfs_msm_boot, fs_type, sysfs_type;
 type sysfs_touchpanel, fs_type, sysfs_type;
+type pps_socket, file_type;
