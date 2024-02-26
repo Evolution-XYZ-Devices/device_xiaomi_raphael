@@ -160,6 +160,8 @@ on boot && property:persist.vendor.usb.controller.default=*
     setprop vendor.usb.controller ${persist.vendor.usb.controller.default}
 
 on property:sys.boot_completed=1
+    # STOP EATING MY BATTERY AFTER 100H OF UPTIME FUCK YOU
+    stop statsd
 
     #top-app
     write /dev/cpuctl/top-app/cpu.uclamp.max max
