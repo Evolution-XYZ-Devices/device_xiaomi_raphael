@@ -44,6 +44,3 @@ allow xiaomiparts_app {
   cgroup
   sysfs_leds
 }:file rw_file_perms;
-
-# Allow XiaomiParts to read default prop
-allow xiaomiparts_app default_prop:file r_file_perms;
